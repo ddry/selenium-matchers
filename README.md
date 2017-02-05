@@ -1,2 +1,3 @@
 # selenium-matchers
-Basic matchers for Selenium Webdriver
+
+Basic matchers for Selenium Webdriver.
