@@ -1,3 +1,3 @@
 # selenium-matchers
 
-Basic matchers for Selenium Webdriver. Deploy check.
+Basic matchers for Selenium Webdriver.
