@@ -10,8 +10,8 @@
     spec: 'spec',
     matchers: 'index',
     moduleTitles: {
-      phantomjs: 'Selenium PhantomJS testing',
-      instance: 'PhantomJS driver as it is'
+      phantomjs: 'Selenium PhantomJS usecase testing',
+      instance: "PhantomJS driver as it is with 'instance' matcher"
     },
     outside: {
       phantomjs: 'ddry-selenium-phantomjs',
