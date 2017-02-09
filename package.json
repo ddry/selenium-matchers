@@ -1,6 +1,6 @@
 {
   "name": "ddry-selenium-matchers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic matchers for Selenium Webdriver",
   "scripts": {
     "test": "make test && make coveralls"
