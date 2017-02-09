@@ -2,13 +2,12 @@
   "name": "ddry-selenium-matchers",
   "version": "1.0.0",
   "description": "Basic matchers for Selenium Webdriver",
-  "main": "index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test && make coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ddry/selenium-matchers.git"
+    "url": "ddry/selenium-matchers"
   },
   "files": [
     "LICENSE",
@@ -16,6 +15,11 @@
     "index.js"
   ],
   "keywords": [
+    "async",
+    "browser",
+    "chai",
+    "headless",
+    "matchers",
     "selenium",
     "webdriver"
   ],
@@ -28,5 +32,11 @@
   "dependencies": {
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.16",
+    "ddry-mocha": "3.2.0-d0.0.4",
+    "ddry-selenium-phantomjs": "^1.0.0",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }

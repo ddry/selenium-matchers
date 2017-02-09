@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "6.1"
+before_install:
+  - npm install -g istanbul
+  - npm install -g statik
+  - cd usecase
+  - npm install
+  - brunch build --production
+  - cd ..
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3
+  - statik usecase/public --port 3333 &
+  - sleep 3
