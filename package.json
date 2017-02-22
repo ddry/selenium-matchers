@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Basic matchers for Selenium Webdriver",
   "scripts": {
-    "test": "make test && make coveralls"
+    "test": "make coveralls"
   },
   "repository": {
     "type": "git",
@@ -34,9 +34,7 @@
     "chai-as-promised": "^6.0.0"
   },
   "devDependencies": {
-    "coveralls": "^2.11.16",
-    "ddry-mocha": "3.2.0-d0.0.4",
-    "ddry-selenium-phantomjs": "^1.0.0",
-    "mocha-lcov-reporter": "^1.2.0"
+    "ddry-mocha-tape": "0.0.15",
+    "ddry-selenium-phantomjs": "^1.0.0"
   }
 }

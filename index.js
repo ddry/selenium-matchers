@@ -10,8 +10,12 @@
   expect = chai.expect;
 
   module.exports = {
-    selenium_instance: function(instance, actual, expected) {
-      return expect(typeof actual).to.equal(expected);
+    selenium_instance: function(spec, specSet) {
+      var _;
+      return _ = {
+        actual: typeof specSet.code[specSet.methodName],
+        expected: spec.expected
+      };
     },
     selenium_text_by_selector: function(code, i, e) {
       var text;

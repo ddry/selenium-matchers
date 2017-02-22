@@ -5,8 +5,10 @@ chai.use require 'chai-as-promised'
 expect = chai.expect
 
 module.exports =
-  selenium_instance: (instance, actual, expected) ->
-    expect(typeof actual).to.equal expected
+  selenium_instance: (spec, specSet) ->
+    _ =
+      actual: typeof specSet.code[specSet.methodName]
+      expected: spec.expected
 
   selenium_text_by_selector: (code, i, e) ->
     text = code.use.findElement(css: i).getText()

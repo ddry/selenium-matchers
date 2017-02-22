@@ -5,4 +5,4 @@ module.exports = (dd, that) ->
     matcher: 'selenium_instance'
     it: 'closes the driver instance'
     i: []
-    e: 'object'
+    e: 'function'

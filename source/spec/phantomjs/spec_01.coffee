@@ -1,9 +1,7 @@
 'use strict'
 
 module.exports = (dd, that) ->
-
   context "PhantomJS usecase testing with 'text by selector' matcher", ->
-
     before ->
       that.get "http://localhost:3333"
 
