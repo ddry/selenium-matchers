@@ -1,0 +1,3 @@
+cd usecase
+sh sh/ps_cleanup
+brunch w -s &
