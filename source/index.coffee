@@ -6,6 +6,9 @@ expect = chai.expect
 
 module.exports =
   selenium_instance: (spec, specSet) ->
+    subject = specSet.code[specSet.methodName]
+    type = typeof subject
+    subject.apply specSet.code, spec.input if type is 'function'
     _ =
       actual: typeof specSet.code[specSet.methodName]
       expected: spec.expected

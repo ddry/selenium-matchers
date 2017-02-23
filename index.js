@@ -11,7 +11,12 @@
 
   module.exports = {
     selenium_instance: function(spec, specSet) {
-      var _;
+      var _, subject, type;
+      subject = specSet.code[specSet.methodName];
+      type = typeof subject;
+      if (type === 'function') {
+        subject.apply(specSet.code, spec.input);
+      }
       return _ = {
         actual: typeof specSet.code[specSet.methodName],
         expected: spec.expected
